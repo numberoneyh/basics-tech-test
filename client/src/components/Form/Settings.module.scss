@@ -1,0 +1,33 @@
+.update {
+  @apply mx-auto mt-8 bg-white p-8 rounded-md max-w-2xl;
+  h2 {
+    @apply text-[24px] font-medium;
+  }
+}
+
+.form {
+  @apply grid grid-cols-2 gap-4 mt-5;
+
+  input {
+    @apply w-full rounded-md py-3 px-4 shadow-[inset_0_0_3px_2px_#eeeeee] bg-[#fafafa] outline-none font-normal;
+  }
+  label {
+    @apply w-full font-medium;
+  }
+}
+
+.avatar {
+  @apply flex flex-col font-medium;
+
+  > button {
+    @apply bg-[#ee7752] rounded-md text-white px-4 py-2 font-medium tracking-wider hover:bg-blue-600 transition-colors;
+  }
+}
+
+.submit {
+  @apply flex flex-col font-medium;
+
+  > button {
+    @apply bg-blue-500 rounded-md text-white px-4 py-2 font-medium tracking-wider hover:bg-blue-600 transition-colors;
+  }
+}

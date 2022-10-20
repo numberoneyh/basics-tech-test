@@ -1,0 +1,25 @@
+.profile {
+  @apply relative;
+}
+
+.button {
+  > img {
+    @apply relative w-[50px] h-[50px] rounded-full;
+  }
+}
+
+.popup {
+  @apply absolute right-0 w-44 bg-gray-400 rounded divide-y divide-black;
+  
+  &__user {
+    @apply py-3 px-4 text-sm text-gray-900 cursor-default;
+  }
+  
+  &__link {
+    @apply text-gray-700 font-medium hover:bg-gray-100 block text-center py-1 transition-colors;
+  }
+  
+  &__button {
+    @apply w-full font-medium py-1 px-4 text-gray-700 hover:bg-gray-100;
+  }
+}

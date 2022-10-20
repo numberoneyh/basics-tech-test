@@ -1,0 +1,23 @@
+.card {
+  @apply flex flex-col rounded-md p-4 bg-white;
+}
+
+.img {
+  @apply p-1 w-[80px] h-[80px] rounded-full ring-2 ring-gray-300;
+}
+
+.title {
+  @apply font-medium text-gray-500;
+}
+
+.name {
+  @apply font-bold;
+}
+
+.desc {
+  @apply font-medium text-gray-500;
+}
+
+.date {
+  @apply font-bold;
+}

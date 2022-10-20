@@ -1,0 +1,59 @@
+.register {
+  @apply mx-auto mt-8 bg-white p-8 rounded-md max-w-2xl;
+  h2 {
+    @apply text-[24px] font-medium;
+  }
+}
+
+.form {
+  @apply grid grid-cols-2 gap-4 mt-5;
+
+  input {
+    @apply w-full rounded-md py-3 px-4 shadow-[inset_0_0_3px_2px_#eeeeee] bg-[#fafafa] outline-none font-normal;
+  }
+  label {
+    @apply w-full font-medium;
+  }
+}
+
+.gender {
+  @apply flex flex-col;
+  > div {
+    @apply inline-flex;
+
+    label {
+      @apply flex justify-start items-center cursor-pointer gap-2 font-normal;
+
+      > input {
+        @apply w-4 rounded-md py-3 px-4 shadow-[inset_0_0_0_0_#fff] bg-[#fff] outline-none cursor-pointer;
+      }
+    }
+  }
+  > span {
+    @apply mb-4 font-medium;
+  }
+}
+
+.avatar {
+  @apply flex flex-col font-medium;
+
+  > button {
+    @apply bg-[#ee7752] rounded-md text-white px-4 py-2 font-medium tracking-wider hover:bg-blue-600 transition-colors;
+  }
+}
+
+.submit {
+  @apply bg-blue-500 rounded-md text-white px-4 py-2 font-medium tracking-wider w-1/3 hover:bg-blue-600 transition-colors;
+}
+
+.radio {
+  @apply hidden;
+}
+
+.checkbox {
+  @apply w-5 h-5 bg-[#eeee] rounded-full inline-flex justify-center items-center after:absolute after:bg-green-700 after:hidden after:h-3 after:w-3 after:rounded-full;
+}
+
+.radio:checked + .checkbox::after {
+  @apply block;
+}

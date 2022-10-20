@@ -1,0 +1,33 @@
+.login {
+  @apply mx-auto mt-8 bg-white p-8 rounded-md max-w-2xl;
+  h2 {
+    @apply text-[24px] font-medium;
+  }
+}
+
+.form {
+  @apply flex flex-col gap-4 mt-5;
+
+  input {
+    @apply w-full rounded-md py-3 px-4 shadow-[inset_0_0_3px_2px_#eeeeee] bg-[#fafafa] outline-none font-normal;
+  }
+  label {
+    @apply w-full font-medium;
+  }
+}
+
+.submit {
+  @apply bg-blue-500 rounded-md text-white px-4 py-2 font-medium tracking-wider w-full hover:bg-blue-600 transition-colors;
+}
+
+.link {
+  @apply mt-4;
+
+  span {
+    @apply text-sm font-medium text-gray-500;
+  }
+
+  a {
+    @apply text-blue-700 hover:underline dark:text-blue-500 ml-2;
+  }
+}

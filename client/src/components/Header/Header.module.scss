@@ -1,0 +1,15 @@
+.header {
+  @apply bg-blue-500 shadow-[0_0_30px_15px_rgba(0,0,0,0.3)] h-[72px] flex justify-center items-center;
+}
+
+.nav {
+  @apply py-2;
+}
+
+.list {
+  @apply flex justify-between items-center;
+}
+
+.link {
+  @apply text-white font-bold text-[18px] px-3 py-1 tracking-wide rounded-md hover:bg-blue-600 transition-colors;
+}
